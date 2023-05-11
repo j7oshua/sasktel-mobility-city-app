@@ -7,3 +7,5 @@ are mapped into departments with a complete total given for that department. Thi
 The app will display the total's for each month. Can also click each month to get a breakdown of total's for each department.
 The app will allow new departments to be added and removed. The app will also allow mapping of phone numbers to accounts.
 
+![image](https://github.com/j7oshua/sasktel-mobility-city-app/assets/46877732/63ccebe7-9d36-4b5d-8a09-b4d5c8eb045a)
+![image](https://github.com/j7oshua/sasktel-mobility-city-app/assets/46877732/e0ecaf59-bf49-499c-aa34-00661d1e3db0)
