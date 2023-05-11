@@ -17,10 +17,6 @@ import errorHandlerMiddleware from "./middleware/error-handler.js"
 app.use(express.json())
 app.use(express.urlencoded())
 
-app.get('/api/v1',(req, res) => {
-    res.json({msg: "API"})
-})
-
 app.use("/api/v1/monthly_bills", billRouter)
 
 app.use(notFoundMiddleware)
