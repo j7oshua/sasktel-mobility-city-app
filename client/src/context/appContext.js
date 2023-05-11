@@ -1,5 +1,5 @@
-import React, { useReducer, useContext } from "react"
-import reducer from "./reducer"
+import React, { useReducer, useContext } from "react";
+import reducer from "./reducer";
 import { DISPLAY_ALERT,
     CLEAR_ALERT,
     TOGGLE_SIDEBAR,
@@ -17,7 +17,11 @@ const initialState = {
     monthlyBills: [],
     totalMonthlyBills: 0,
     numOfPagesBills: 1,
-    billPage: 1
+    billPage: 1,
+    name: "",
+    email: "",
+    password: "",
+    isMember: true
 }
 
 const AppContext = React.createContext()
@@ -66,6 +70,7 @@ const AppProvider = ({children}) => {
     </AppContext.Provider>
 }
 
+// Custom hook - Just used to
 const useAppContext = () => {
     return useContext(AppContext)
 }
