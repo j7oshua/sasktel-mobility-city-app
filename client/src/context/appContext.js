@@ -47,8 +47,6 @@ const AppProvider = ({children}) => {
         let url = `/bills`
         dispatch({type:GET_MONTHLY_BILLS_BEGIN})
         try {
-            //     const showData = await axios.get("/api/v1/monthly_bills/bills")
-            //     console.log(showData.data.result1.recordset)
             const { data } = await axios.get(url)
             const { monthlyBills,  totalMonthlyBills, numOfPages } = data;
             dispatch({
