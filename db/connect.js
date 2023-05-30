@@ -1,8 +1,8 @@
-import dotenv from "dotenv"
-dotenv.config()
+import dotenv from "dotenv";
+dotenv.config();
+import sql from "mssql";
 
-import sql from "mssql"
-
+// The configuration settings for the database.
 const config = {
     user: process.env.USER,
     password: process.env.PASSWORD,
@@ -12,11 +12,11 @@ const config = {
     options: {
         trustServerCertificate: true
     }
-}
+};
 
 const connectDB = () => {
-    return sql.connect(config)
+    return sql.connect(config);
 }
 
-export default connectDB
+export default connectDB;
 

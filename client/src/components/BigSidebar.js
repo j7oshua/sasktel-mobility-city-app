@@ -3,6 +3,11 @@ import NavLinks from "./NavLinks"
 import Logo from "../components/Logo"
 import { useAppContext } from "../context/appContext"
 
+/**
+ * This component is the sidebar that is displayed on bigger screens.
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const BigSidebar = () => {
     const {showSidebar} = useAppContext()
     return (

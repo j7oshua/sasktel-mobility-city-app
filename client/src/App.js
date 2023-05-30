@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import { Error, Register } from "./pages";
-import { MonthlyBills, Upload, SharedLayout, PhoneMapping, Departments } from "./pages/dashboard";
+import { Error } from "./pages"
+import { MonthlyBills, Upload, SharedLayout, PhoneMapping, Departments, ViewBill } from "./pages/dashboard"
 
 function App() {
     // ** How to connect to server
@@ -16,10 +16,10 @@ function App() {
                 <Route index element={<MonthlyBills />} />
                 <Route path="departments" element={<Departments />} />
                 <Route path="phonemapping" element={<PhoneMapping />} />
+                <Route path="view-bill" element={<ViewBill />} />
                 <Route path="upload" element={<Upload />} />
             </Route>
             <Route path="*" element={<Error />}/>
-            <Route path="/register" element={<Register/>} />
         </Routes>
       </BrowserRouter>
   );

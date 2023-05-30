@@ -4,6 +4,11 @@ import { useAppContext } from "../context/appContext"
 import Logo from "./Logo"
 import NavLinks from "./NavLinks";
 
+/**
+ * This sidebar will get displayed on smaller screens.
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const SmallSidebar = () => {
     const {showSidebar, toggleSidebar} = useAppContext()
     return (

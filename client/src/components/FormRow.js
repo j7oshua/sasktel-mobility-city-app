@@ -1,3 +1,13 @@
+/***
+ * This component is used to create a form row by utilizing the props that are passed in.
+ * @param type
+ * @param name
+ * @param value
+ * @param handleChange
+ * @param labelText
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const FormRow = ({type, name, value, handleChange, labelText}) => {
     return (
         <div className="form-row">

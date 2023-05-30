@@ -1,4 +1,3 @@
-import Error from "./Error";
-import Register from "./Register";
+import Error from "./Error"
 
-export { Error, Register }
+export { Error }
